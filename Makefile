@@ -19,6 +19,11 @@ test:
 	# Additional, optional, tests could go here
 	#python -m pytest -vv --cov=myrepolib tests/*.py
 	#python -m pytest --nbval notebook.ipynb
+install-hadolint:
+	echo "Installing Hadolint..."
+	curl -sSL -o hadolint https://github.com/hadolint/hadolint/releases/download/v1.18.0/hadolint-Linux-x86_64
+	chmod +x hadolint
+	sudo mv hadolint /usr/local/bin/
 
 lint:
 	# See local hadolint install instructions:   https://github.com/hadolint/hadolint
