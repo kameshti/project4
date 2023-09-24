@@ -1,3 +1,14 @@
+voclabs:~/environment/project4 (main) $ ./run_kubernetes.sh 
+Error from server (AlreadyExists): pods "project4-app" already exists
+NAME           READY   STATUS    RESTARTS   AGE
+project4-app   1/1     Running   0          3m57s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+
+
+
+voclabs:~/environment/project4 (main) $ ./make_prediction.sh 
 Port: 8000
 {
   "prediction": [
