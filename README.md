@@ -44,7 +44,8 @@ source .devops/bin/activate
 
 ### Kubernetes Steps
 
-* Setup and Configure Docker locally
-* Setup and Configure Kubernetes locally
-* Create Flask app in Container
-* Run via kubectl
+1.Setup and Configure Docker locally - See Docker Offical documentation
+2.Setup and Configure Kubernetes locally uisng minikube and kubectl - See minikube and kubectl
+3.Create Flask app in Container using docker - See Dockerfile in the project
+4.Create a Kubernetes Deployment - kubectl create deployment deployment-name --image=$dockerpath:tag
+5.Forward the port - kubectl port-forward deployment/docker-image-name localport_to_expose:port_on_container
